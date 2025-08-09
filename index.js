@@ -1,7 +1,7 @@
-const express = require('express');
-const axios = require('axios');
-const cheerio = require('cheerio');
-const cors = require('cors');
+import express from 'express';
+import axios from 'axios';
+import { load } from 'cheerio';
+import cors from 'cors';
 
 const app = express();
 app.use(cors());
@@ -12,13 +12,14 @@ app.post('/get-guidelines', async (req, res) => {
 
   try {
     const response = await axios.get(doc_url);
-    const $ = cheerio.load(response.data);
+    const $ = load(response.data);
 
     const text = $('body').text().replace(/\s+/g, ' ').trim().slice(0, 3000);
     const summary = `📘 ${platform_name} Docs Summary:\n\n${text}`;
 
     res.json({ summary });
   } catch (err) {
+    console.error('Error fetching documentation:', err.message);
     res.status(500).json({ error: 'Failed to fetch or parse the documentation.' });
   }
 });
