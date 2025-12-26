@@ -64,8 +64,16 @@ csvLines.forEach((line, i) => {
 });
 
 // Test 4: Clean up test files
-fs.unlinkSync(testJsonPath);
-fs.unlinkSync(testCsvPath);
-console.log('\n✓ Cleaned up test files');
+try {
+  if (fs.existsSync(testJsonPath)) {
+    fs.unlinkSync(testJsonPath);
+  }
+  if (fs.existsSync(testCsvPath)) {
+    fs.unlinkSync(testCsvPath);
+  }
+  console.log('\n✓ Cleaned up test files');
+} catch (err) {
+  console.error(`⚠️  Warning: Could not clean up test files: ${err.message}`);
+}
 
 console.log('\n=== All Edge Case Tests Passed! ===');

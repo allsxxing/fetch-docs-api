@@ -51,13 +51,13 @@ console.log('=== CSV File Verification ===');
 let allValid = true;
 
 // Verify character_assets.csv
-allValid &= verifyCSV('character_assets.csv', ['asset_name', 'attribute', 'description'], 5);
+allValid = allValid && verifyCSV('character_assets.csv', ['asset_name', 'attribute', 'description'], 5);
 
 // Verify core_engine_settings.csv
-allValid &= verifyCSV('core_engine_settings.csv', ['setting', 'value'], 11);
+allValid = allValid && verifyCSV('core_engine_settings.csv', ['setting', 'value'], 11);
 
 // Verify prompt_library_v1.csv
-allValid &= verifyCSV('prompt_library_v1.csv', ['id', 'prompt'], 5);
+allValid = allValid && verifyCSV('prompt_library_v1.csv', ['id', 'prompt'], 5);
 
 console.log('\n=================================');
 if (allValid) {
