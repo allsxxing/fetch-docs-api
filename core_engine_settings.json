@@ -1,0 +1,15 @@
+{
+  "engine": "Veo_3_FLOW",
+  "global_logic": {
+    "motion_physics": "Snap-and-Hold: Cinematic momentum followed by a 2-second stabilization lock to prevent mascot limb drifting.",
+    "lighting_model": "Dynamic Specular Bloom: Light must refract through diamond facets creating sharp prismatic flares. Environment utilizes 'Houston Purple' hour lighting.",
+    "shutter_style": "High-shutter speed (90-degree look) to ensure the chrome 84s/elbows stay sharp while spinning.",
+    "color_profile": "High-saturation Candy Red, Deep Violet, and Volumetric Gold."
+  },
+  "negative_constraints": [
+    "No mascot mask deformation",
+    "No blurring of jewelry textures",
+    "No floating elbow rims",
+    "No fluid or melting foam fingers"
+  ]
+}
