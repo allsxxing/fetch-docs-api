@@ -1,0 +1,6 @@
+asset_name,attribute,description
+hero_sprite,character_visual,Main character sprite with multiple animation frames
+weapon_sword,equipment_melee,Standard sword weapon for close combat
+armor_chest,equipment_defense,Chest armor providing medium protection
+potion_health,consumable_healing,Restores 50 health points when consumed
+skill_fireball,ability_magic,Projectile spell dealing fire damage

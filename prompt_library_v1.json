@@ -1,0 +1,24 @@
+{
+  "scenes": [
+    {
+      "id": "scene_001",
+      "prompt": "A medieval castle at sunset with guards patrolling the walls"
+    },
+    {
+      "id": "scene_002",
+      "prompt": "Dense forest with ancient trees and mysterious fog rolling through"
+    },
+    {
+      "id": "scene_003",
+      "prompt": "Underground dungeon with torches lighting stone corridors"
+    },
+    {
+      "id": "scene_004",
+      "prompt": "Bustling marketplace in a fantasy town with various merchant stalls"
+    },
+    {
+      "id": "scene_005",
+      "prompt": "Mountain peak with snow and a distant dragon circling overhead"
+    }
+  ]
+}
