@@ -1,0 +1,17 @@
+{
+  "global_logic": {
+    "max_players": 4,
+    "tick_rate": 60,
+    "physics_enabled": true,
+    "collision_detection": "AABB",
+    "render_distance": 1000,
+    "auto_save_interval": 300
+  },
+  "negative_constraints": {
+    "no_friendly_fire": "Players cannot damage teammates",
+    "no_out_of_bounds": "Players are blocked from leaving map boundaries",
+    "no_duplicate_items": "Each unique item can only exist once in inventory",
+    "no_negative_stats": "Character stats cannot go below zero",
+    "no_instant_respawn": "Minimum 5 second delay before respawn"
+  }
+}

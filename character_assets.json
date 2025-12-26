@@ -1,0 +1,24 @@
+{
+  "assets": {
+    "hero_sprite": {
+      "attribute": "character_visual",
+      "description": "Main character sprite with multiple animation frames"
+    },
+    "weapon_sword": {
+      "attribute": "equipment_melee",
+      "description": "Standard sword weapon for close combat"
+    },
+    "armor_chest": {
+      "attribute": "equipment_defense",
+      "description": "Chest armor providing medium protection"
+    },
+    "potion_health": {
+      "attribute": "consumable_healing",
+      "description": "Restores 50 health points when consumed"
+    },
+    "skill_fireball": {
+      "attribute": "ability_magic",
+      "description": "Projectile spell dealing fire damage"
+    }
+  }
+}
