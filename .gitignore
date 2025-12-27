@@ -5,6 +5,10 @@ package-lock.json
 # Test files
 test_*.json
 test_*.csv
+test_output.md
+test_output.json
+user_dna_profile.md
+user_dna_profile.json
 
 # OS files
 .DS_Store
