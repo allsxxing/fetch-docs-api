@@ -290,7 +290,6 @@ class ConversationsAnalyzer {
    */
   analyzeToneAndCulture(messages) {
     let tone = 'professional';
-    const culturalMarkers = [];
 
     const userMessages = messages.filter(m => m.role === 'user');
     
@@ -316,7 +315,7 @@ class ConversationsAnalyzer {
       tone = 'balanced/professional';
     }
 
-    return { tone, culturalMarkers };
+    return { tone };
   }
 
   /**
@@ -453,11 +452,23 @@ class ConversationsAnalyzer {
   }
 
   /**
-   * Estimate token count (rough approximation)
+   * Estimate token count using a more accurate approximation
+   * Based on common tokenizer behavior (Gemini, GPT-4, Claude)
    */
   estimateTokens(text) {
-    // Rough approximation: 1 token ≈ 4 characters
-    return Math.ceil(text.length / 4);
+    // More accurate approximation based on word and character analysis
+    // Average: 1 token ≈ 0.75 words or 1 token ≈ 4 characters
+    
+    // Split into words (including punctuation as separate tokens)
+    const words = text.split(/\s+/).filter(w => w.length > 0);
+    
+    // Count special tokens (markdown headers, code blocks, etc.)
+    const specialTokens = (text.match(/#+\s|```|\*\*|__|>\s|\n\n/g) || []).length;
+    
+    // Estimate: words * 1.3 (accounting for subword tokenization) + special tokens
+    const estimate = Math.ceil(words.length * 1.3) + specialTokens;
+    
+    return estimate;
   }
 }
 
