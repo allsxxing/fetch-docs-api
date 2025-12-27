@@ -72,6 +72,13 @@ node verify_csv.js
 To clone this repository for development:
 
 ```bash
+git clone https://github.com/OWNER/REPO_NAME.git
+cd REPO_NAME
+npm install
+```
+
+Example with this repository:
+```bash
 git clone https://github.com/allsxxing/fetch-docs-api.git
 cd fetch-docs-api
 npm install
@@ -82,10 +89,15 @@ npm install
 To create a complete mirror copy including all branches and refs:
 
 ```bash
-git clone --mirror https://github.com/allsxxing/fetch-docs-api.git
+git clone --mirror https://github.com/OWNER/REPO_NAME.git
 ```
 
 This creates a bare repository suitable for migrating to another location.
+
+Example with this repository:
+```bash
+git clone --mirror https://github.com/allsxxing/fetch-docs-api.git
+```
 
 ## Creating a Private Copy
 
@@ -94,22 +106,26 @@ If you want to create your own private version of this repository:
 ### Method 1: Using GitHub's Import Feature (Recommended)
 
 1. Go to https://github.com/new/import
-2. Enter the clone URL: `https://github.com/allsxxing/fetch-docs-api.git`
-3. Choose a new repository name (e.g., `my-private-fetch-api`)
+2. Enter the clone URL of the source repository: `https://github.com/OWNER/REPO_NAME.git`
+3. Choose a new repository name (e.g., `my-private-repo`)
 4. Select **Private** as the repository visibility
 5. Click "Begin import"
+
+Example importing this repository:
+- Source URL: `https://github.com/allsxxing/fetch-docs-api.git`
+- New name: `my-private-fetch-api`
 
 ### Method 2: Manual Migration
 
 1. **Clone the repository as a mirror:**
    ```bash
-   git clone --mirror https://github.com/allsxxing/fetch-docs-api.git fetch-docs-api-mirror
-   cd fetch-docs-api-mirror
+   git clone --mirror https://github.com/SOURCE_OWNER/SOURCE_REPO.git repo-mirror
+   cd repo-mirror
    ```
 
 2. **Create a new private repository on GitHub:**
    - Go to https://github.com/new
-   - Enter a repository name (e.g., `my-private-fetch-api`)
+   - Enter a repository name (e.g., `my-private-repo`)
    - Select **Private** visibility
    - **Do NOT** initialize with README, .gitignore, or license
    - Click "Create repository"
@@ -126,6 +142,14 @@ If you want to create your own private version of this repository:
    cd YOUR_NEW_REPO
    npm install
    ```
+
+Example migrating this repository:
+```bash
+git clone --mirror https://github.com/allsxxing/fetch-docs-api.git fetch-api-mirror
+cd fetch-api-mirror
+# After creating new private repo on GitHub
+git push --mirror https://github.com/YOUR_USERNAME/my-private-fetch-api.git
+```
 
 ### Method 3: Fork and Make Private
 
