@@ -1,0 +1,140 @@
+[
+  {
+    "id": "conv-1",
+    "title": "WALEMANIA Project Setup",
+    "create_time": 1703001600,
+    "update_time": 1703088000,
+    "mapping": {
+      "msg-1": {
+        "message": {
+          "id": "msg-1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1703001600,
+          "content": {
+            "parts": [
+              "Hey! Need help with WALEMANIA project. No fluff, just tight code. Using Node.js and React. Always use camelCase for variables. 🤫 #prompt"
+            ]
+          }
+        }
+      },
+      "msg-2": {
+        "message": {
+          "id": "msg-2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1703001700,
+          "content": {
+            "parts": [
+              "Got it! I'll keep it concise and use camelCase. What do you need?"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "conv-2",
+    "title": "Python Flask API",
+    "create_time": 1703174400,
+    "update_time": 1703260800,
+    "mapping": {
+      "msg-1": {
+        "message": {
+          "id": "msg-1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1703174400,
+          "content": {
+            "parts": [
+              "Working on WILDE WEST backend. Python + Flask + PostgreSQL. Must follow REST API best practices. Use snake_case for Python."
+            ]
+          }
+        }
+      },
+      "msg-2": {
+        "message": {
+          "id": "msg-2",
+          "author": {
+            "role": "assistant"
+          },
+          "create_time": 1703174500,
+          "content": {
+            "parts": [
+              "Understood. Flask REST API with PostgreSQL, using snake_case. What endpoint do you need?"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "conv-3",
+    "title": "TypeScript Refactor",
+    "create_time": 1703347200,
+    "update_time": 1703433600,
+    "mapping": {
+      "msg-1": {
+        "message": {
+          "id": "msg-1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1703347200,
+          "content": {
+            "parts": [
+              "Core Rule: Always prefer functional programming over OOP. Use TypeScript with strict mode. Never use 'any' type."
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "conv-4",
+    "title": "Docker Setup",
+    "create_time": 1703520000,
+    "update_time": 1703606400,
+    "mapping": {
+      "msg-1": {
+        "message": {
+          "id": "msg-1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1703520000,
+          "content": {
+            "parts": [
+              "Need Docker compose for microservices. WALEMANIA needs MongoDB and Redis. Keep it minimal. 🚀"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "conv-5",
+    "title": "AWS Lambda Function",
+    "create_time": 1703692800,
+    "update_time": 1703779200,
+    "mapping": {
+      "msg-1": {
+        "message": {
+          "id": "msg-1",
+          "author": {
+            "role": "user"
+          },
+          "create_time": 1703692800,
+          "content": {
+            "parts": [
+              "Deploy to AWS Lambda. Always use environment variables for secrets. Direct, edgy tone preferred. #deploy"
+            ]
+          }
+        }
+      }
+    }
+  }
+]
